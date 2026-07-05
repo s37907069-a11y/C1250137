@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blue Horizon Hotel | Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap topbar">
+    <div class="brand">Blue Horizon Hotel</div>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a class="active" href="booking.html">Booking</a>
+      <a href="help.html">Help</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Reservation Form</h1>
+      <p class="small">Fill in your details to request a room reservation.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap form-wrap">
+      <form class="form" action="#" method="post">
+        <div class="row">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="name@example.com" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="major">Room Type</label>
+            <select id="major" name="major" required>
+              <option value="">Select room</option>
+              <option value="Deluxe Room">Deluxe Room</option>
+              <option value="Executive Suite">Executive Suite</option>
+              <option value="Luxury King">Luxury King</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="guests">Guests</label>
+            <input id="guests" name="guests" type="number" min="1" max="6" value="2" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="checkin">Check-in Date</label>
+            <input id="checkin" name="checkin" type="date" required>
+          </div>
+
+          <div class="field">
+            <label for="checkout">Check-out Date</label>
+            <input id="checkout" name="checkout" type="date" required>
+          </div>
+        </div>
+
+        <fieldset>
+          <legend>Gender</legend>
+          <label><input type="radio" name="gender" value="Male" required> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+          <label><input type="radio" name="gender" value="Prefer not to say"> Prefer not to say</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Hobbies</legend>
+          <label><input type="checkbox" name="hobbies" value="Swimming"> Swimming</label>
+          <label><input type="checkbox" name="hobbies" value="Gym"> Gym</label>
+          <label><input type="checkbox" name="hobbies" value="Spa"> Spa</label>
+        </fieldset>
+
+        <div class="field">
+          <label for="comments">Comments</label>
+          <textarea id="comments" name="comments" placeholder="Special requests, arrival time, or preferences"></textarea>
+        </div>
+
+        <button class="btn" type="submit">Submit Reservation</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="grid">
+        <article class="card">
+          <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/1517ede583382558a301f5dbbc9ed2df9dc1981f.jpg"
+               alt="Modern hotel bedroom with elegant lighting"
+               loading="lazy">
+          <div class="pad">
+            <h3>Premium Bedroom</h3>
+            <p>Comfortable space with a stylish interior.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/e2387cb69fe5c3ac4e1c20364f382abc72cb4118.jpg"
+               alt="Modern luxury hotel lobby with bright seating area"
+               loading="lazy">
+          <div class="pad">
+            <h3>Grand Lobby</h3>
+            <p>Elegant arrival area for guests and visitors.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/bf0b80aa1240e1d3145f30282b5820c6925c19ac.jpg"
+               alt="Outdoor hotel pool area with lounge chairs"
+               loading="lazy">
+          <div class="pad">
+            <h3>Pool Area</h3>
+            <p>Relax by the pool in a bright open environment.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">This booking page follows the final project form requirements.</div>
+</footer>
+</body>
+</html>
